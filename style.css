@@ -8,15 +8,34 @@
 }
 
 body {
-    backgrond-color: var(--bg-color);
-    color: vat (--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
     font-family: var(--font);
     height: 100vh;
-    magin: 0;
+    margin: 0;
 }
 
 header {
     background-color: var(--primary-color);
-    text-aling: center;
+    text-align: center;
     padding: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: trasform 0.1s;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
 }
